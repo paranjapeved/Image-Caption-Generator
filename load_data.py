@@ -1,3 +1,4 @@
+
 from numpy import array
 from pickle import load
 from keras.preprocessing.text import Tokenizer
@@ -153,5 +154,3 @@ tokenizer = create_tokenizer(train_descriptions)
 # saving
 with open('tokenizer.pickle', 'wb') as handle:
     pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-# loading
